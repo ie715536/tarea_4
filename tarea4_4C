@@ -18,7 +18,7 @@ int Pow(int sum, int index){
         return sum;
     }
     else if(index == 1){
-        return ;
+        return sum;
     }
     else{
         sum = sum * 2;
