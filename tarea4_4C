@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int Pow(int sum, int index);
+
+int main()
+{
+    int sum = 2;
+    int n = 4;
+    sum = Pow(sum, n);
+    printf("%d", sum);
+    return 0;
+}
+
+int Pow(int sum, int index){
+    if(index == 0){
+        sum = 1;
+        return sum;
+    }
+    else if(index == 1){
+        return ;
+    }
+    else{
+        sum = sum * 2;
+        index --;
+    }
+        return Pow(sum, index);
+}
